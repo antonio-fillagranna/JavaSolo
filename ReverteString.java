@@ -5,12 +5,12 @@ public class ReverteString {
 	{
 	ReverteString rev=new ReverteString();
 	Scanner sc=new Scanner(System.in);
-	System.out.print("Enter a string : ");
+	System.out.print("Digite uma string : ");
 	String  str=sc.nextLine();	
-	System.out.println("Reverse of a String  is : "+rev.reverse(str));
+	System.out.println("String reversa eh : "+rev.reverte(str));
     sc.close();
 	}
-    static String reverse(String s) {
+    static String reverte(String s) {
 	String rev="";
 	for(int j=s.length();j>0;--j) {
 	rev=rev+(s.charAt(j-1)); 
